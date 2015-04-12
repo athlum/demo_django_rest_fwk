@@ -49,6 +49,10 @@ class PersonViewSet(viewsets.ModelViewSet):
         	changed = True
         	user.comment = comment
 
+        # for attr, value in validated_data.items():
+        #     setattr(instance, attr, value)
+        # instance.save()
+
         if changed:
         	user.save()	
         return Response({'status':'OK'})
