@@ -15,4 +15,4 @@ install:
   - pip install -q markdown
   - pip install -q djangorestframework
 # command to run tests
-script: nosetests
+script: python manage.py runserver
