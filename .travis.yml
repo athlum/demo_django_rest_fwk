@@ -3,6 +3,7 @@ sudo: required
 python:
     - 2.6
     - 2.7
+    - 2.6
     - pypy
 
 # command to install dependencies
@@ -15,5 +16,4 @@ install:
   - pip install -q mysql-python
 # command to run tests
 script: 
-  - pwd
   - pwd
